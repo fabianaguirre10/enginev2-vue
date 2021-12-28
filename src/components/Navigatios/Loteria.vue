@@ -778,7 +778,8 @@ export default {
         const response = await http.get(`/Registro/getRegistros`);
         if (response.status === "Ok") {
           this.registroItems = response.data;
-          console.log("llegaron los Focos");
+          console.log("llegaron los registros");
+
           console.log(this.registroItems);
           if(this.registroItems){
             this.registroItems.forEach(foco=>{
